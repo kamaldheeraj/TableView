@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var objects = [AnyObject]()
+    var objects = [Course]()
 
 
     override func awakeFromNib() {
@@ -22,8 +22,12 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+        //self.navigationItem.rightBarButtonItem = addButton
+        
+        objects.append(Course(courseNumber: "CSCI 240", courseName: "Introduction to Programming", creditHours: 4, maxEnrollment: 240))
+        objects.append(Course(courseNumber: "CSCI 241", courseName: "Intermediate Programming in C++", creditHours: 4, maxEnrollment: 40))
+        objects.append(Course(courseNumber: "CSCI 340", courseName: "Algorithms and Data Structures", creditHours: 4, maxEnrollment: 40))
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,18 +35,18 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(sender: AnyObject) {
+    /*func insertNewObject(sender: AnyObject) {
         objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-    }
+    }*/
 
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as! NSDate
+                let object = objects[indexPath.row]         
             (segue.destinationViewController as! DetailViewController).detailItem = object
             }
         }
@@ -61,8 +65,8 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let object = objects[indexPath.row]
+        cell.textLabel!.text = object.courseNumber
         return cell
     }
 
