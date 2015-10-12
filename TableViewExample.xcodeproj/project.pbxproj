@@ -15,6 +15,7 @@
 		28166D471BC55E2600B0C87B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28166D451BC55E2600B0C87B /* LaunchScreen.xib */; };
 		28166D531BC55E2600B0C87B /* TableViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28166D521BC55E2600B0C87B /* TableViewExampleTests.swift */; };
 		28166D5D1BC5641A00B0C87B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28166D5C1BC5641A00B0C87B /* Course.swift */; };
+		2827EAEA1BC8096100A58924 /* CourseData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2827EAE91BC8096100A58924 /* CourseData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		28166D511BC55E2600B0C87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28166D521BC55E2600B0C87B /* TableViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExampleTests.swift; sourceTree = "<group>"; };
 		28166D5C1BC5641A00B0C87B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		2827EAE91BC8096100A58924 /* CourseData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CourseData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				28166D3A1BC55E2600B0C87B /* AppDelegate.swift */,
 				28166D3C1BC55E2600B0C87B /* MasterViewController.swift */,
+				2827EAE91BC8096100A58924 /* CourseData.plist */,
 				28166D3E1BC55E2600B0C87B /* DetailViewController.swift */,
 				28166D401BC55E2600B0C87B /* Main.storyboard */,
 				28166D431BC55E2600B0C87B /* Images.xcassets */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28166D421BC55E2600B0C87B /* Main.storyboard in Resources */,
+				2827EAEA1BC8096100A58924 /* CourseData.plist in Resources */,
 				28166D471BC55E2600B0C87B /* LaunchScreen.xib in Resources */,
 				28166D441BC55E2600B0C87B /* Images.xcassets in Resources */,
 			);
@@ -417,6 +421,7 @@
 				28166D581BC55E2600B0C87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28166D591BC55E2600B0C87B /* Build configuration list for PBXNativeTarget "TableViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				28166D5B1BC55E2600B0C87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

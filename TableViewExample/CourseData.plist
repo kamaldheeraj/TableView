@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>courseNumber</key>
+		<string>CSCI 241</string>
+		<key>courseName</key>
+		<string>Intermediate Programming in C++</string>
+		<key>creditHours</key>
+		<string>4</string>
+		<key>maxEnrollment</key>
+		<string>40</string>
+	</dict>
+	<dict>
+		<key>courseNumber</key>
+		<string>CSCI 340</string>
+		<key>courseName</key>
+		<string>Data Structures</string>
+		<key>creditHours</key>
+		<string>4</string>
+		<key>maxEnrollment</key>
+		<string>40</string>
+	</dict>
+	<dict>
+		<key>courseNumber</key>
+		<string>CSCI 240</string>
+		<key>courseName</key>
+		<string>Intro to Programming</string>
+		<key>creditHours</key>
+		<string>4</string>
+		<key>maxEnrollment</key>
+		<string>240</string>
+	</dict>
+</array>
+</plist>
