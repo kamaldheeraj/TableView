@@ -25,9 +25,9 @@ class MasterViewController: UITableViewController {
         //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         //self.navigationItem.rightBarButtonItem = addButton
         
-        objects.append(Course(courseNumber: "CSCI 240", courseName: "Introduction to Programming", creditHours: 4, maxEnrollment: 240))
-        objects.append(Course(courseNumber: "CSCI 241", courseName: "Intermediate Programming in C++", creditHours: 4, maxEnrollment: 40))
-        objects.append(Course(courseNumber: "CSCI 340", courseName: "Algorithms and Data Structures", creditHours: 4, maxEnrollment: 40))
+//        objects.append(Course(courseNumber: "CSCI 240", courseName: "Introduction to Programming", creditHours: 4, maxEnrollment: 240))
+//        objects.append(Course(courseNumber: "CSCI 241", courseName: "Intermediate Programming in C++", creditHours: 4, maxEnrollment: 40))
+//        objects.append(Course(courseNumber: "CSCI 340", courseName: "Algorithms and Data Structures", creditHours: 4, maxEnrollment: 40))
     }
 
     override func didReceiveMemoryWarning() {

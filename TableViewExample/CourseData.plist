@@ -8,9 +8,9 @@
 		<key>courseName</key>
 		<string>Intermediate Programming in C++</string>
 		<key>creditHours</key>
-		<string>4</string>
+		<integer>4</integer>
 		<key>maxEnrollment</key>
-		<string>40</string>
+		<integer>40</integer>
 	</dict>
 	<dict>
 		<key>courseNumber</key>
@@ -18,9 +18,9 @@
 		<key>courseName</key>
 		<string>Data Structures</string>
 		<key>creditHours</key>
-		<string>4</string>
+		<integer>4</integer>
 		<key>maxEnrollment</key>
-		<string>40</string>
+		<integer>40</integer>
 	</dict>
 	<dict>
 		<key>courseNumber</key>
@@ -28,9 +28,9 @@
 		<key>courseName</key>
 		<string>Intro to Programming</string>
 		<key>creditHours</key>
-		<string>4</string>
+		<integer>4</integer>
 		<key>maxEnrollment</key>
-		<string>240</string>
+		<integer>240</integer>
 	</dict>
 </array>
 </plist>
